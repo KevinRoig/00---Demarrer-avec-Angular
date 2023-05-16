@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.block_container {
+    width: 98vw;
+    height: 80vh;
+    justify-content: space-between;
+    border: none;
+  }
+  
+  .first_block,
+  .second_block {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    width: 100%;
+    height: 50%;
+  }
+  .menu_container {
+    margin-bottom: 2rem;
+}

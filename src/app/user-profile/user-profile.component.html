@@ -1,0 +1,24 @@
+<div class="main_user_container">
+  <div>
+    <img src="{{userProfile.photo}}" alt="" />
+  </div>
+  <div>
+    <p>Votre nom: {{userProfile.name}}</p>
+  </div>
+  <div>
+    <p>Votre prénom: {{userProfile.firstName}}</p>
+  </div>
+  <div>
+    <button (click)="showHide()">Afficher votre âge?</button>
+  </div>
+  <div id="age">
+    <p>Votre âge: {{userProfile.age}}</p>
+  </div>
+  <div>
+    <label for="quote">Votre signature</label>
+    <input id="quote" [(ngModel)]="userProfile.quote" />
+    <p>
+      {{userProfile.quote}}
+    </p>
+  </div>
+</div>
