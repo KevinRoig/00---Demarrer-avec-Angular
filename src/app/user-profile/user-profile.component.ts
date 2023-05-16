@@ -6,7 +6,7 @@ import { User } from "../user";
   templateUrl: "./user-profile.component.html",
   styleUrls: ["./user-profile.component.css"]
 })
-export class UserComponent {
+export class UserProfileComponent {
   userProfile: User = {
     name: "La Bidouille",
     firstName: "Jo",
