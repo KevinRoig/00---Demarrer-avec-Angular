@@ -9,12 +9,13 @@ import { UserProfileComponent } from "./user-profile/user-profile.component";
 import { MenuComponent } from './menu/menu.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ROUTES } from './app.routes';
+import { MyFormComponent } from './my-form/my-form.component';
 
 
 @NgModule({
-  declarations: [AppComponent, BlockComponent, UserProfileComponent, MenuComponent, SignUpComponent],
+  declarations: [AppComponent, BlockComponent, UserProfileComponent, MenuComponent, SignUpComponent, MyFormComponent],
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(ROUTES)],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
