@@ -1,9 +1,17 @@
-    <div class="hero"> A hero appears :
-    <h2>{{hero.name | uppercase}} details</h2>
-
+<div class="hero"> A hero appears :
     <div>
-        <label for="name">Hero name: </label>
-        <input id="name" [(ngModel)]="hero.name" placeholder="name">
+        <ul>
+            <li *ngFor="let hero of heroes">
+                <h2>{{hero.name }} details</h2>
+                <div>
+                    <label for="name">Hero name: </label>
+                    <input id="name" placeholder="name">
+                </div>
+                <div><span>name: </span>{{hero.name}}</div>
+                <button (click)="onSelect(hero)">Choose hero</button>
+            </li>
+        </ul>
+
     </div>
-    <div><span>name: </span>{{hero.name}}</div>
-    </div> 
+</div>
+<app-messages></app-messages>
