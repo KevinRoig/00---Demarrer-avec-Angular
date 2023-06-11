@@ -9,6 +9,7 @@ import { ChildComponent } from './child/child.component';
 import { Hero } from './hero';
 import { HeroesComponent } from './heroes/heroes.component';
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
+import { NasaComponent } from './nasa/nasa.component';
 
 const ROUTES: Routes = [
   { path: 'user', component: UserProfileComponent },
@@ -18,7 +19,8 @@ const ROUTES: Routes = [
   { path: 'form', component: MyFormComponent},
   { path: 'child', component: ChildComponent},
   { path: 'heroes', component: HeroesComponent},
-  { path: 'cocktails', component: CocktailListComponent} 
+  { path: 'cocktails', component: CocktailListComponent},
+  { path: 'nasa', component: NasaComponent}
 ];
  
 export { ROUTES };
