@@ -12,11 +12,14 @@ export class NasaComponent implements OnInit {
   constructor(public http: HttpClient, public nasaService: NasaService) { }
 
   imgOfTheDay: any
+  image:any 
 
   ngOnInit(): void {
     this.nasaService.getImageOfTheDay()
       .subscribe(response => {
+        
         this.imgOfTheDay = response;
+        this.image = this.imgOfTheDay.hdurl
       })
   }
 
